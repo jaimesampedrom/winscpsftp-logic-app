@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "Functions",
+      "path": "./Function"
+    },
+    {
+      "name": "LogicApp",
+      "path": "./LogicApp"
+    }
+  ],
+  "settings": {
+    "terminal.integrated.env.windows": {
+      "PATH": "C:\\Users\\jaimesa\\.azurelogicapps\\dependencies\\DotNetSDK;${env:PATH}"
+    },
+    "omnisharp.dotNetCliPaths": [
+      "C:\\Users\\jaimesa\\.azurelogicapps\\dependencies\\DotNetSDK"
+    ],
+    "azurite.location": "C:\\Users\\jaimesa\\.azurelogicapps\\.azurite"
+  }
+}

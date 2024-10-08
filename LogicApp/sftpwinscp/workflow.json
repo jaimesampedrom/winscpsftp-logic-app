@@ -1,0 +1,75 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "Call_a_local_function_in_this_logic_app_to_download_SFTP_file": {
+                "type": "InvokeFunction",
+                "inputs": {
+                    "functionName": "winscpsftp",
+                    "parameters": {
+                        "hostname": "sftpstorageaccjsm.blob.core.windows.net",
+                        "username": "sftpstorageaccjsm.jaimesampedro",
+                        "password": "4YiaYyU1g6g8a0mwdgaERAF1upaNwoRX",
+                        "fingerprint": "ecdsa-sha2-nistp256 256 7Lrxb5z3CnAWI8pr2LK5eFHwDCl/Gtm/fhgGwB3zscw",
+                        "filePath": "/DOC02.zip"
+                    }
+                },
+                "runAfter": {}
+            },
+            "Response": {
+                "type": "Response",
+                "kind": "http",
+                "inputs": {
+                    "statusCode": 200,
+                    "body": "@body('Call_a_local_function_in_this_logic_app_to_download_SFTP_file')"
+                },
+                "runAfter": {
+                    "Upload_blob_to_storage_container": [
+                        "SUCCEEDED"
+                    ]
+                }
+            },
+            "Upload_blob_to_storage_container": {
+                "type": "ServiceProvider",
+                "inputs": {
+                    "parameters": {
+                        "containerName": "sftp",
+                        "blobName": "/DOC02.zip",
+                        "content": "@outputs('Compose')"
+                    },
+                    "serviceProviderConfiguration": {
+                        "connectionName": "AzureBlob",
+                        "operationId": "uploadBlob",
+                        "serviceProviderId": "/serviceProviders/AzureBlob"
+                    }
+                },
+                "runAfter": {
+                    "Compose": [
+                        "SUCCEEDED"
+                    ]
+                }
+            },
+            "Compose": {
+                "type": "Compose",
+                "inputs": {
+                    "$content-type": "application/octet-stream",
+                    "$content": "@{body('Call_a_local_function_in_this_logic_app_to_download_SFTP_file')}"
+                },
+                "runAfter": {
+                    "Call_a_local_function_in_this_logic_app_to_download_SFTP_file": [
+                        "SUCCEEDED"
+                    ]
+                }
+            }
+        },
+        "triggers": {
+            "When_a_HTTP_request_is_received": {
+                "type": "Request",
+                "kind": "Http"
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {}
+    },
+    "kind": "Stateful"
+}

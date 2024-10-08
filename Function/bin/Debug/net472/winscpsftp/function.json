@@ -1,0 +1,79 @@
+{
+  "Name": null,
+  "ScriptFile": "../bin/winscpsftp.dll",
+  "FunctionDirectory": null,
+  "EntryPoint": "winscp.winscpsftp.Run",
+  "Language": "net472",
+  "Properties": {},
+  "Bindings": [
+    {
+      "Name": "hostname",
+      "Connection": null,
+      "Type": "workflowActionTrigger",
+      "Properties": {},
+      "Direction": "In",
+      "DataType": null,
+      "Cardinality": null,
+      "IsTrigger": true,
+      "IsReturn": false,
+      "Raw": null
+    }
+  ],
+  "InputBindings": [
+    {
+      "Name": "hostname",
+      "Connection": null,
+      "Type": "workflowActionTrigger",
+      "Properties": {},
+      "Direction": "In",
+      "DataType": null,
+      "Cardinality": null,
+      "IsTrigger": true,
+      "IsReturn": false,
+      "Raw": null
+    }
+  ],
+  "OutputBindings": [],
+  "Trigger": {
+    "Name": "hostname",
+    "Connection": null,
+    "Type": "workflowActionTrigger",
+    "Properties": {},
+    "Direction": "In",
+    "DataType": null,
+    "Cardinality": null,
+    "IsTrigger": true,
+    "IsReturn": false,
+    "Raw": null
+  },
+  "InputSchema": {
+    "type": "object",
+    "properties": {
+      "hostname": {
+        "type": "string"
+      },
+      "username": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "fingerprint": {
+        "type": "string"
+      },
+      "filePath": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "hostname",
+      "username",
+      "password",
+      "fingerprint",
+      "filePath"
+    ]
+  },
+  "OutputSchema": {
+    "type": "string"
+  }
+}
