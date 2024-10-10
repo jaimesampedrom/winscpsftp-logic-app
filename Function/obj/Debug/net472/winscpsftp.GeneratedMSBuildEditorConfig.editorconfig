@@ -1,5 +1,5 @@
 is_global = true
 build_property.RootNamespace = winscpsftp
-build_property.ProjectDir = C:\SFTP\netsftp\netsftp\Function\
+build_property.ProjectDir = C:\SFTP\git\winscpsftp-logic-app\Function\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -94,45 +94,16 @@ namespace winscp
     }
           
         
-
-
-        
-
-        /// <summary>
-        /// Represents the weather information for winscpsftp.
-        /// </summary>
-        public class SFTP
-        {
-            /// <summary>
-            /// Gets or sets the zip code.
-            /// </summary>
-            public int HostName { get; set; }
-
-            /// <summary>
-            /// Gets or sets the current weather.
-            /// </summary>
-            public string UserName { get; set; }
-
-            /// <summary>
-            /// Gets or sets the low temperature for the day.
-            /// </summary>
-            public string Password { get; set; }
-
-            /// <summary>
-            /// Gets or sets the high temperature for the day.
-            /// </summary>
-            public string SshHostKeyFingerprint { get; set; }
-        }
     }
 }
 
-// Root myDeserializedClass = JsonConverter.DeserializeObject<Root>(myJsonResponse);
-    public class Root
-    {
-        [JsonProperty("$Content-Type")]
-        public string Contenttype { get; set; }
+// // Root myDeserializedClass = JsonConverter.DeserializeObject<Root>(myJsonResponse);
+//     public class Root
+//     {
+//         [JsonProperty("$Content-Type")]
+//         public string Contenttype { get; set; }
 
-        [JsonProperty("$Content")]
-        public string Content { get; set; }
-    }
+//         [JsonProperty("$Content")]
+//         public string Content { get; set; }
+//     }
 

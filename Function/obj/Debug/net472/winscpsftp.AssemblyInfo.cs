@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("winscpsftp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6596dcf0a74390c02e9f707fadac8ba6835b6be3")]
 [assembly: System.Reflection.AssemblyProductAttribute("winscpsftp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("winscpsftp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

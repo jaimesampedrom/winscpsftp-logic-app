@@ -3,7 +3,7 @@
   "Values": {
     "APP_KIND": "workflowapp",
     "FUNCTIONS_WORKER_RUNTIME": "node",
-    "ProjectDirectoryPath": "c:\\SFTP\\netsftp\\netsftp\\LogicApp",
+    "ProjectDirectoryPath": "c:\\SFTP\\git\\winscpsftp-logic-app\\LogicApp",
     "AzureWebJobsSecretStorageType": "Files"
   }
 }

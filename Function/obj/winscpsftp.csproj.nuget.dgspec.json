@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SFTP\\netsftp\\netsftp\\Function\\winscpsftp.csproj": {}
+    "C:\\SFTP\\git\\winscpsftp-logic-app\\Function\\winscpsftp.csproj": {}
   },
   "projects": {
-    "C:\\SFTP\\netsftp\\netsftp\\Function\\winscpsftp.csproj": {
+    "C:\\SFTP\\git\\winscpsftp-logic-app\\Function\\winscpsftp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SFTP\\netsftp\\netsftp\\Function\\winscpsftp.csproj",
+        "projectUniqueName": "C:\\SFTP\\git\\winscpsftp-logic-app\\Function\\winscpsftp.csproj",
         "projectName": "winscpsftp",
-        "projectPath": "C:\\SFTP\\netsftp\\netsftp\\Function\\winscpsftp.csproj",
+        "projectPath": "C:\\SFTP\\git\\winscpsftp-logic-app\\Function\\winscpsftp.csproj",
         "packagesPath": "C:\\Users\\jaimesa\\.nuget\\packages\\",
-        "outputPath": "C:\\SFTP\\netsftp\\netsftp\\Function\\obj\\",
+        "outputPath": "C:\\SFTP\\git\\winscpsftp-logic-app\\Function\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -72,7 +72,7 @@
               "version": "[13.0.3, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

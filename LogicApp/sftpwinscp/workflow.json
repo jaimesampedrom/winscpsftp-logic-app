@@ -7,11 +7,11 @@
                 "inputs": {
                     "functionName": "winscpsftp",
                     "parameters": {
-                        "hostname": "sftpstorageaccjsm.blob.core.windows.net",
-                        "username": "sftpstorageaccjsm.jaimesampedro",
-                        "password": "4YiaYyU1g6g8a0mwdgaERAF1upaNwoRX",
-                        "fingerprint": "ecdsa-sha2-nistp256 256 7Lrxb5z3CnAWI8pr2LK5eFHwDCl/Gtm/fhgGwB3zscw",
-                        "filePath": "/DOC02.zip"
+                        "hostname": "",
+                        "username": "",
+                        "password": "",
+                        "fingerprint": "",
+                        "filePath": "/"
                     }
                 },
                 "runAfter": {}
